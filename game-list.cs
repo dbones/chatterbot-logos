@@ -42,10 +42,26 @@ public Games()
 
     AddGame(new Game
     {
+        Name = "cod",
+        Aliases = new HashSet<string>(new[] { "call-of-duty" }),
+        Logo = "cod.png",
+        MaxDefault = 5
+    });
+
+    AddGame(new Game
+    {
         Name = "cod-cold-war",
         Aliases = new HashSet<string>(new[] { "call-of-duty-cold-war" }),
         Logo = "cod-cold-war.png",
         MaxDefault = 5
+    });
+
+    AddGame(new Game
+    {
+        Name = "cod-mobile",
+        Aliases = new HashSet<string>(new[] { "call-of-duty-mobile" }),
+        Logo = "cod-mobile.png",
+        MaxDefault = 4
     });
 
     // D
@@ -172,6 +188,13 @@ public Games()
 
     // R
 
+    AddGame(new Game
+    {
+        Name = "raft",
+        Logo = "raft.jpg",
+        MaxDefault = 8
+    });
+
 
     AddGame(new Game
     {
@@ -197,6 +220,14 @@ public Games()
     });
 
     // S
+
+    AddGame(new Game
+    {
+        Name = "skribblio",
+        Aliases = new HashSet<string>(new[] { "skribbl" }),
+        Logo = "skribblio.jpg",
+        MaxDefault = 15
+    });
 
     AddGame(new Game
     {
@@ -236,6 +267,13 @@ public Games()
 
     AddGame(new Game
     {
+        Name = "we-were-here",
+        Logo = "we-were-here.png",
+        MaxDefault = 2
+    });
+
+    AddGame(new Game
+    {
         Name = "World-Of-Warcaft",
         Aliases = new HashSet<string>(new[] { "wow" }),
         Logo = "world-of-warcraft.png",
@@ -247,4 +285,5 @@ public Games()
     // Y
 
     // Z
+
 }
